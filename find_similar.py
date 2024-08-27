@@ -7,6 +7,7 @@ def find_my_film(keyword, films_data):
             return film
     return None
 
+
 def get_rating(my_film, films_data, num_to_recommend=8):
     params = {
         'belongs_to_collection': 1000,
@@ -29,6 +30,7 @@ def get_rating(my_film, films_data, num_to_recommend=8):
             break
         final_recommendation.append(film)
     return final_recommendation
+
 
 if __name__ == '__main__':
     path = input('Enter path to DataBase:')
